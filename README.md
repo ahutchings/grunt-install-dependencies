@@ -26,6 +26,12 @@ _Run this task with the `grunt install-dependencies` command._
 
 There are a number of options available.
 
+#### options.cwd
+Type: `String`
+Default: ''
+
+Defines the working directory to run 'npm install' (relative path)
+
 #### options.stdout
 Type: `Boolean`
 Default: true

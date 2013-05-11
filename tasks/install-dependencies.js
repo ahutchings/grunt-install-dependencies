@@ -8,11 +8,12 @@ module.exports = function (grunt) {
 
 		cb = this.async();
 		options = this.options({
+      cwd: '',
 			stdout: true,
 			stderr: true,
 			failOnError: true
 		});
-		cp = exec('npm install', function (err, stdout, stderr) {
+		cp = exec('npm install', {cwd: options.cwd}, function (err, stdout, stderr) {
 			if (err && options.failOnError) {
 				grunt.warn(err);
 			}
@@ -22,6 +23,7 @@ module.exports = function (grunt) {
 		grunt.verbose.writeflags(options, 'Options');
 
 		if (options.stdout || grunt.option('verbose')) {
+      console.log("Running npm install in: " + options.cwd)
 			cp.stdout.pipe(process.stdout);
 		}
 
