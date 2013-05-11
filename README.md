@@ -26,12 +26,6 @@ _Run this task with the `grunt install-dependencies` command._
 
 There are a number of options available.
 
-#### options.cwd
-Type: `String`
-Default: ''
-
-Defines the working directory to run 'npm install' (relative path)
-
 #### options.stdout
 Type: `Boolean`
 Default: true
@@ -49,3 +43,9 @@ Type: `Boolean`
 Default: true
 
 Instructs the install-dependencies task to fail the grunt run if an error occurs while updating dependencies.
+
+#### options.cwd
+Type: `String`
+Default: (none)  - runs in current directory
+
+Defines the working directory to run 'npm install' (relative path)
