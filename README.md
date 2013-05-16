@@ -43,3 +43,9 @@ Type: `Boolean`
 Default: true
 
 Instructs the install-dependencies task to fail the grunt run if an error occurs while updating dependencies.
+
+#### options.cwd
+Type: `String`
+Default: (none)  - runs in current directory
+
+Defines the working directory to run 'npm install' (relative path)
