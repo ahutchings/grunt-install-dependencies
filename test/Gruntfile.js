@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = function (grunt) {
-	grunt.initConfig({
+  grunt.initConfig({
 
-	});
+  });
 
-	grunt.loadTasks('../tasks');
+  grunt.loadTasks('../tasks');
 };
