@@ -11,9 +11,12 @@ module.exports = function (grunt) {
       cwd: '',
       stdout: true,
       stderr: true,
-      failOnError: true
+      failOnError: true,
+      isDevelopment: false
     });
-    cp = exec('npm install', {cwd: options.cwd}, function (err, stdout, stderr) {
+    var cmd = "npm install";
+    if(!options.isDevelopment ) cmd += " -production";
+    cp = exec(cmd, {cwd: options.cwd}, function (err, stdout, stderr) {
       if (err && options.failOnError) {
         grunt.warn(err);
       }
