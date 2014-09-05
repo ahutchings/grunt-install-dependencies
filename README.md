@@ -44,6 +44,12 @@ Default: true
 
 Instructs the install-dependencies task to fail the grunt run if an error occurs while updating dependencies.
 
+#### options.isDevelopment
+Type: `Boolean`
+Default: false
+
+If `false` runs npm install with the -production flag (doesn't install devDependencies). Otherwise install all dependencies
+
 #### options.cwd
 Type: `String`
 Default: (none)  - runs in current directory
