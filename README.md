@@ -1,5 +1,7 @@
 # grunt-install-dependencies [![Build Status](https://secure.travis-ci.org/ahutchings/grunt-install-dependencies.png?branch=master)](http://travis-ci.org/ahutchings/grunt-install-dependencies)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahutchings/grunt-install-dependencies.svg)](https://greenkeeper.io/)
+
 > Install and update npm dependencies.
 
 ## Getting Started
